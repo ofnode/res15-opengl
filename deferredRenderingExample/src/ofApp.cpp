@@ -51,14 +51,6 @@ void ofApp::setup()
     m_sphereMesh = sphere.getMesh();
     m_sphereMesh.setColorForIndices( 0, m_sphereMesh.getNumIndices(), ofFloatColor( 1.0f, 1.0f, 1.0f, 1.0f ) );
     
-    
-    // Statue model
-    ofxAssimpModelLoader loader;
-    loader.loadModel( "models/statue.obj" );
-    m_statueMesh = loader.getMesh( 0 );
-    m_statueMesh.setColorForIndices( 0, m_statueMesh.getNumIndices(), ofFloatColor( 1.0f, 1.0f, 1.0f, 1.0f ) );
-    m_statueTexture = loader.getTextureForMesh( 0 );
-    
     // Pure white texture for texturing point light spheres
     ofImage whiteImage( "textures/white.jpg" );
     m_whiteTexture = whiteImage.getTexture();

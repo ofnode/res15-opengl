@@ -2,8 +2,6 @@
 
 #include "ofMain.h"
 
-#include "ofxAssimpModelLoader.h"
-
 class ofApp : public ofBaseApp
 {
 public:
